@@ -27,19 +27,17 @@ const Hero = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <span className="text-lg text-white">
-          CV for full details:
-        </span>
+        <span className="text-lg text-white">CV for full details:</span>
 
         <a
-          href="/Entessar CV.pdf"
-          download="Entessar CV"
+          href="/Portfolio/EntessarCV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-2.5 bg-purple-500 border border-white rounded-xl py-2.5 px-6 sm:px-10
               hover:scale-105  hover:text-white hover:shadow-lg transition-all duration-500"
-          aria-label="Download Entessar CV"
         >
           <FaDownload className="text-lg transition-transform duration-300" />
-          Download CV
+          View / Download CV
         </a>
       </motion.div>
     </div>
