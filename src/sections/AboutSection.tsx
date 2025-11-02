@@ -11,13 +11,14 @@ const AboutSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        Hi, I’m Entessar, a Front-End Developer passionate about building modern
-        and responsive websites.I started my journey with Focal X, completing
-        both the beginner and advanced front-end training with top scores (98%
-        and 97%). I have hands-on experience with HTML, CSS, JavaScript, React,
-        and Next.js, and I’m constantly eager to learn new technologies and
-        improve my skills. My experience level is intermediate, and I’m excited
-        to contribute to creative projects and continue growing as a developer.
+        I’m Entessar, a passionate Front-End Developer dedicated to creating
+        modern, responsive, and user-friendly websites. I began my journey with
+        Focal X, where I successfully completed both the beginner and advanced
+        front-end training programs. I have
+        hands-on experience with HTML, CSS, JavaScript, React, and Next.js, and
+        I’m always eager to explore new technologies and refine my skills.
+        Currently, I consider myself at an intermediate level, and I’m excited
+        to collaborate on creative projects and continue growing as a developer.
       </motion.p>
     </section>
   );
