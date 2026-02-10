@@ -1,31 +1,19 @@
-import SocialComponent from "./SocialComponent";
+import type { contactData } from "../data/contactData";
+import SocialIconComponent from "./SocialIconComponent";
 import { motion } from "framer-motion";
-
-export interface ContactComponentProps {
-  index: number;
-  icon: React.ReactNode;
-  title: string;
-  text?: string;
-  border?: boolean;
-  social?: social[];
-}
-
-interface social {
-  icon: React.ReactNode;
-  link: string;
-}
 
 const ContactComponent = ({
   index,
   icon,
   title,
+  url,
   text,
   social,
   border,
-}: ContactComponentProps) => {
+}: contactData) => {
   return (
     <motion.div
-      className={`flex flex-col items-center justify-center min-lg:h-[95px] py-5
+      className={`flex flex-col items-center justify-center lg:h-[95px] py-5
     ${border ? "max-lg:border-t lg:border-l border-purple-500" : ""}`}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -35,10 +23,12 @@ const ContactComponent = ({
         {icon}
         {title}
       </div>
-      <span className="text-lg mt-3">{text}</span>
+      <a href={url} className="text-lg mt-3">
+        {text}
+      </a>
       <div className="flex gap-2.5 items-center">
         {social?.map((e, index) => (
-          <SocialComponent key={index} icon={e.icon} link={e.link} />
+          <SocialIconComponent key={index} icon={e.icon} link={e.link} />
         ))}
       </div>
     </motion.div>

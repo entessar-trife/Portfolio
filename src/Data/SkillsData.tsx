@@ -2,7 +2,7 @@ import { FaJsSquare } from "react-icons/fa";
 import { FaCss3Alt, FaGithub, FaHtml5, FaReact } from "react-icons/fa6";
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 
-export const SkillsData = [
+export const skillsData = [
   {
     name: "HTML",
     icon: <FaHtml5 className="text-orange-500" />,

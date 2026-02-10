@@ -1,6 +1,6 @@
 const LoaderComponent = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white overflow-hidden relative">
+    <div className="flex flex-col items-center justify-center h-screen bg-linear-to-r from-blue-500 to-purple-600 text-white overflow-hidden relative">
       <p className="font-pacifico mb-10 text-4xl text-center animate-pulse">
         Hi and welcome to my portfolio...
       </p>

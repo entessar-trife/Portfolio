@@ -1,12 +1,5 @@
 import { motion } from "framer-motion";
-
-interface ProjectCardComponentProps {
-  index: number;
-  image: string;
-  title: string;
-  githubLink: string;
-  demoLink: string;
-}
+import type { projectsData } from "../data/projectsData";
 
 const ProjectCardComponent = ({
   index,
@@ -14,7 +7,7 @@ const ProjectCardComponent = ({
   title,
   githubLink,
   demoLink,
-}: ProjectCardComponentProps) => {
+}: projectsData) => {
   return (
     <motion.div
       className="bg-white border-2 border-purple-200 rounded-xl shadow-md p-5"
@@ -40,7 +33,7 @@ const ProjectCardComponent = ({
         </a>
         <a
           href={demoLink}
-          className="px-4 py-2 bg-purple-500 text-white rounded hover:-translate-y-1 duration-500"
+          className="px-4 py-2 bg-purple-400 text-white rounded hover:-translate-y-1 duration-500"
           target="_blank"
         >
           Live

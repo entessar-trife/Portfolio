@@ -14,11 +14,11 @@ const AboutSection = () => {
         I’m Entessar, a passionate Front-End Developer dedicated to creating
         modern, responsive, and user-friendly websites. I began my journey with
         Focal X, where I successfully completed both the beginner and advanced
-        front-end training programs. I have
-        hands-on experience with HTML, CSS, JavaScript, React, and Next.js, and
-        I’m always eager to explore new technologies and refine my skills.
-        Currently, I consider myself at an intermediate level, and I’m excited
-        to collaborate on creative projects and continue growing as a developer.
+        front-end training programs. I have hands-on experience with HTML, CSS,
+        JavaScript, React, and Next.js, and I’m always eager to explore new
+        technologies and refine my skills. Currently, I consider myself at an
+        intermediate level, and I’m excited to collaborate on creative projects
+        and continue growing as a developer.
       </motion.p>
     </section>
   );

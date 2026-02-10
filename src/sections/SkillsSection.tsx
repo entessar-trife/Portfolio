@@ -1,6 +1,6 @@
 import MainTitle from "../components/MainTitle";
 import SkillComponent from "../components/SkillComponent";
-import { SkillsData } from "../Data/SkillsData";
+import { skillsData } from "../data/skillsData";
 
 const SkillsSection = () => {
   return (
@@ -8,10 +8,10 @@ const SkillsSection = () => {
       id="skills"
       className="flex flex-col items-center justify-center pt-24 "
     >
-      <MainTitle title=" My Skills" />
+      <MainTitle title="My Skills" />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 ">
-        {SkillsData.map((skill, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 2xl:gap-10 w-full">
+        {skillsData.map((skill, index) => (
           <SkillComponent
             index={index}
             icon={skill.icon}

@@ -2,20 +2,36 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoShareSocialSharp } from "react-icons/io5";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa6";
-import type { ContactComponentProps } from "../components/ContactComponent";
 import { AiFillInstagram } from "react-icons/ai";
 
-export const ContactData: ContactComponentProps[] = [
+export interface contactData {
+  index: number;
+  icon: React.ReactNode;
+  title: string;
+  text?: string;
+  url?: string;
+  border?: boolean;
+  social?: social[];
+}
+
+interface social {
+  icon: React.ReactNode;
+  link: string;
+}
+
+export const contactData: contactData[] = [
   {
     index: 0,
     icon: <MdEmail />,
     title: "Email:",
     text: "entessartrefie4@gmail.com",
+    url: "mailto:entessartrefie4@gmail.com",
   },
   {
     index: 1,
     icon: <FaPhoneAlt />,
     title: "Phone Number:",
+    url: "tel:+910000000000",
     text: "0930949671",
     border: true,
   },

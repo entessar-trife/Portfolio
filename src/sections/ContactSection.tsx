@@ -1,6 +1,6 @@
 import ContactComponent from "../components/ContactComponent";
 import MainTitle from "../components/MainTitle";
-import { ContactData } from "../Data/ContactData";
+import { contactData } from "../data/contactData";
 
 const ContactSection = () => {
   return (
@@ -10,15 +10,8 @@ const ContactSection = () => {
         className="grid grid-cols-1 items-center lg:grid-cols-3 
       bg-white p-6 shadow-md rounded-xl border-2 border-purple-200"
       >
-        {ContactData.map((e, index) => (
-          <ContactComponent
-            index={index}
-            title={e.title}
-            icon={e.icon}
-            text={e.text}
-            social={e.social}
-            border={e.border}
-          />
+        {contactData.map((e, index) => (
+          <ContactComponent key={index} {...e} />
         ))}
       </div>
     </section>

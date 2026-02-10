@@ -11,7 +11,7 @@ const SkillComponent = ({ index, icon, name, desc }: SkillComponentProps) => {
   return (
     <motion.div
       className="flex flex-col items-center justify-center bg-white border-2 border-purple-200 shadow-md rounded-3xl p-6 hover:shadow-2xl 
-            hover:scale-105 transition-transform duration-300 text-center"
+            hover:scale-105 transition-transform duration-300 text-center w-full"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1, duration: 0.6 }}

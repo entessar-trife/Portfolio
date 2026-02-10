@@ -1,9 +1,9 @@
-interface SocialComponentProps {
+interface SocialIconComponentProps {
   icon: React.ReactNode;
   link: string;
 }
 
-const SocialComponent = ({ icon, link }: SocialComponentProps) => {
+const SocialIconComponent = ({ icon, link }: SocialIconComponentProps) => {
   return (
     <div
       className="flex justify-center items-center
@@ -22,4 +22,4 @@ const SocialComponent = ({ icon, link }: SocialComponentProps) => {
   );
 };
 
-export default SocialComponent;
+export default SocialIconComponent;

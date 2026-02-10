@@ -1,4 +1,9 @@
-export const NavLinksData = [
+interface navLinksData {
+  text: string;
+  href: string;
+}
+
+export const navLinksData: navLinksData[] = [
   {
     text: "Projects",
     href: "#projects",

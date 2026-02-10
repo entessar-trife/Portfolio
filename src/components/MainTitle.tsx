@@ -7,6 +7,7 @@ interface MainTitleProps {
 const MainTitle = ({ title }: MainTitleProps) => {
   return (
     <div className="relative inline-block mb-10 md:mb-16">
+      {/* TITLE */}
       <motion.h2
         className="text-3xl sm:text-5xl font-bold text-gray-900 px-4 relative z-10"
         initial={{ opacity: 0, y: -50 }}
@@ -16,6 +17,7 @@ const MainTitle = ({ title }: MainTitleProps) => {
         {title}
       </motion.h2>
 
+      {/* DECORATION LINE */}
       <motion.div
         className="absolute left-0 right-0 bottom-1 h-2 bg-purple-300 rounded-full"
         initial={{ scaleX: 0 }}

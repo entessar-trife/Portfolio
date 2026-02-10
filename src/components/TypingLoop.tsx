@@ -20,7 +20,7 @@ const TypingLoop = ({
   useEffect(() => {
     const cursorInterval = setInterval(
       () => setShowCursor((prev) => !prev),
-      500
+      500,
     );
     return () => clearInterval(cursorInterval);
   }, []);
@@ -32,12 +32,12 @@ const TypingLoop = ({
     if (!isDeleting && displayed.length < phrase.length) {
       timeout = setTimeout(
         () => setDisplayed(phrase.substring(0, displayed.length + 1)),
-        speed
+        speed,
       );
     } else if (isDeleting && displayed.length > 0) {
       timeout = setTimeout(
         () => setDisplayed(phrase.substring(0, displayed.length - 1)),
-        speed / 2
+        speed / 2,
       );
     } else if (!isDeleting && displayed.length === phrase.length) {
       timeout = setTimeout(() => setIsDeleting(true), pause);
@@ -54,7 +54,7 @@ const TypingLoop = ({
       className="text-5xl sm:text-6xl md:text-7xl font-extrabold font-pacifico"
       initial={{ opacity: 0, y: -50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8}}
+      transition={{ duration: 0.8 }}
     >
       {displayed}
       {showCursor && "|"}
